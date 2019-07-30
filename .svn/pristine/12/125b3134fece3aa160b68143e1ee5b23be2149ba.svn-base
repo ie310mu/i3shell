@@ -1,0 +1,1 @@
+i3shell -p 8093 -d F:\ie310.code\GOWORK\src\i3work\static
