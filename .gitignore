@@ -16,3 +16,4 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 .svn/wc.db
+i3shell.log
