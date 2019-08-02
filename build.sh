@@ -1,0 +1,1 @@
+go build -o i3shell main.go

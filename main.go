@@ -3,10 +3,10 @@ package main
 import (
 	"flag"
 	"fmt"
-	"i3work/utils/dirutil"
 	"time"
 
 	"github.com/ie310mu/ie310go"
+	"github.com/ie310mu/ie310go/common/dir"
 	"github.com/ie310mu/ie310go/common/logsagent"
 	"github.com/ie310mu/ie310go/common/pc"
 	"github.com/ie310mu/ie310go/route"
@@ -32,6 +32,11 @@ func main() {
 }
 
 func startInWebBrowser() {
+	defer func() {
+		if err := recover(); err != nil {
+		}
+	}()
+
 	<-time.After(500 * time.Millisecond)
 	pc.OpenUrl("http://127.0.0.1:" + *p + "/")
 }
@@ -56,7 +61,7 @@ func appinit() bool {
 	if *d != "" {
 		httpConfig.DefaultStaticDir = *d
 	} else {
-		httpConfig.DefaultStaticDir = dirutil.GetCurrentPath()
+		httpConfig.DefaultStaticDir = dir.GetCurrentPath()
 	}
 	logsagent.Info("the path is " + httpConfig.DefaultStaticDir)
 	srv := route.NewServerHTTP(httpConfig, "httpServer")

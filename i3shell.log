@@ -216,3 +216,5 @@ main.main()
 2019/07/30 14:25:48.713 [I] [serverHttp.go:85]  server httpServer where listen at 8093
 2019/07/30 14:26:13.623 [I] [main.go:61]  the path is F:\ie310.code\GOWORK\src\github.com\ie310mu\i3shell\
 2019/07/30 14:26:13.624 [I] [serverHttp.go:85]  server httpServer where listen at 8093
+2019/08/02 15:38:36.551 [I] [main.go:66]  the path is F:\ie310.code\GOWORK\src\github.com\ie310mu\i3shell\
+2019/08/02 15:38:36.552 [I] [serverHttp.go:85]  server httpServer where listen at 8093
