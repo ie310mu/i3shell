@@ -1,6 +1,3 @@
-.svn
-i3shell.log
-
 # Binaries for programs and plugins
 *.exe
 *.exe~
@@ -16,7 +13,4 @@ i3shell.log
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
-.svn/wc.db
-i3shell.log
-i3shell.log
-i3shell.log
+*.log
