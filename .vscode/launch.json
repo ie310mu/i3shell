@@ -9,7 +9,7 @@
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "${env:GOPath}/src/github.com/ie310mu/i3shell/main.go",
+            "program": "E:/ie310.code/GOWORK/src/github.com/ie310mu/i3shell/main.go",
             "env": {},
             "args": []
         }
